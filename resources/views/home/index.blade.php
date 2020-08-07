@@ -206,36 +206,9 @@
     </section>
     <!-- Products Section End -->
 
-    <!-- Testimonial Begin -->
-    <div class="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial__slider owl-carousel">
-                        <div class="testimonial__item">
-                            <span class="icon_quotations"></span>
-                            <p>“A lot of agencies can talk a good game. Don't be fooled, look at the results. This is
-                                the only agency that lives up to the hype.”</p>
-                        </div>
-                        <div class="testimonial__item">
-                            <span class="icon_quotations"></span>
-                            <p>“A lot of agencies can talk a good idea. Don't be fooled, look at the results. This is
-                                the only agency that lives up to the hype.”</p>
-                        </div>
-                        <div class="testimonial__item">
-                            <span class="icon_quotations"></span>
-                            <p>“A lot of agencies can talk a good option. Don't be fooled, look at the results. This is
-                                the only agency that lives up to the hype.”</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
 
     <!-- Counter Section Begin -->
-    <section class="counter spad set-bg" data-setbg="img/counter-bg.jpg">
+    <section class="counter spad set-bg mt-5" data-setbg="img/counter-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

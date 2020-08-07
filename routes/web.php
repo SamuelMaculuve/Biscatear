@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::resource('/','mainController');
+Route::resource('/project','projectController');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

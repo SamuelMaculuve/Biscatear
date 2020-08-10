@@ -16,6 +16,13 @@ class ProjectController extends Controller
     {
         return view('project.index');
     }
+    public function dashbrod(){
+        return view('dashboard.index');
+    }
+    public function login(){
+        return view('login.index');
+    }
+
 
     /**
      * Show the form for creating a new resource.

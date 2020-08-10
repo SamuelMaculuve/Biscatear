@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/','mainController');
 Route::resource('/project','projectController');
+Route::get('/dashbrod', 'projectController@dashbrod')->name('dashbrod');
+Route::get('/login', 'projectController@login')->name('login');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -25,7 +25,9 @@ class ProjectController extends Controller
     public function myProject(){
         return view('project.myProject');
     }
-
+    public function freelancer(){
+        return view('project.freelancer');
+    }
     /**
      * Show the form for creating a new resource.
      *

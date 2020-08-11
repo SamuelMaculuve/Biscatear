@@ -530,7 +530,7 @@
                     </div>
                     <div id="Charts" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="flot-charts.html">Flot Charts</a>
+                            <li><a href="/freelancer">Flot Charts</a>
                             </li>
                             <li><a href="bar-charts.html">Bar Charts</a>
                             </li>

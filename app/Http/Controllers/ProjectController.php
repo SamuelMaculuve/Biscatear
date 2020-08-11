@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Categoria;
+use App\Projecto;
 use App\rc;
+use App\Skill;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -14,8 +17,11 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('project.index');
+        $categorias=Categoria::all();
+        $skills=Skill::all();
+        return view('project\index',compact('categorias','skills'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -24,7 +30,11 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        $categorias=Categoria::all();
+        $skills=Skill::all();
+        return view('project\index',compact('categorias','skills'));
+
+
     }
 
     /**
@@ -35,7 +45,18 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $projecto=new Projecto();
+        $projecto->nome=$request->nome;
+
+        $projecto->descricao=$request->descricao;
+        $projecto->skill_requerido=$request->skill;
+        $projecto->moeda=$request->moeda;
+        $projecto->preco=$request->preco;
+        $projecto->save();
+
+        echo "<h1>Cadastrado com sucesso</h1>";
+
+
     }
 
     /**

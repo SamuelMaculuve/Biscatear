@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::resource('/','mainController');
-Route::resource('/project','projectController');
+//Route::resource('/project','projectController');
 Route::resource('/projecto','ProjectController')->names('project');
 
 Route::group(['prefix' => 'admin'], function () {

@@ -95,7 +95,7 @@
             <ul>
                 <li><a href="./index.html">Biscatear Pro</a></li>
 {{--                <li><a href="./services.html">Tornar-se Biscateador</a></li>--}}
-                <li><a href="./shop.html">Entrar</a></li>
+                <li><a href="{{route('project.create')}}">Entrar</a></li>
                 <li><a href="./shop.html">Registar-se</a></li>
                 <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
             </ul>

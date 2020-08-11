@@ -21,6 +21,13 @@ class ProjectController extends Controller
         $skills=Skill::all();
         return view('project\index',compact('categorias','skills'));
     }
+    public function dashbrod(){
+        return view('dashboard.index');
+    }
+    public function login(){
+        return view('login.index');
+    }
+
 
 
     /**

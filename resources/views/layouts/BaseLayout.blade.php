@@ -17,7 +17,13 @@
 <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
-<link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css"
+<link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+ <style>
+     body{
+         background-color: #F6F8FA;
+     }
+
+ </style>
 </head>
 <body>
 <!-- Page Preloder -->

@@ -22,7 +22,9 @@ class ProjectController extends Controller
     public function login(){
         return view('login.index');
     }
-
+    public function myProject(){
+        return view('project.myProject');
+    }
 
     /**
      * Show the form for creating a new resource.

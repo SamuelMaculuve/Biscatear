@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::resource('/','mainController');
+Route::resource('/project','projectController');
+Route::get('/dashboard', 'projectController@dashbrod')->name('dashboard');
+Route::get('/login', 'projectController@login')->name('login');
+Route::get('/myProject', 'projectController@myProject')->name('myProject');
+Route::get('/freelancer', 'projectController@freelancer')->name('freelancer');
+
 
 
 Route::group(['prefix' => 'admin'], function () {

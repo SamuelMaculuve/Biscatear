@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Route::get('/', function () {
-//    return view('welcome');
+//    return view('php');
 //});
 
 Route::resource('/','mainController');
@@ -28,3 +28,7 @@ Route::get('/freelancer', 'projectController@freelancer')->name('freelancer');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

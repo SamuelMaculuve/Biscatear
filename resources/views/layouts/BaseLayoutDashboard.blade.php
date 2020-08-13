@@ -7,6 +7,8 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{asset('css/elegant-icons.css')}}" type="text/css">
+
     <!-- favicon
 		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('_img/favicon.ico')}}">
@@ -17,6 +19,10 @@
     <link href="{{asset('_fonts/notika-icon.ttf')}}" rel="stylesheet">
     <link href="{{asset('_fonts/notika-icon.woff')}}" rel="stylesheet">
     <link href="{{asset('_fonts/notika-icon.svg')}}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{asset('_css/chosen/chosen.css')}}">
+    <script src="{{asset('_js/chosen/chosen.jquery.js')}}"></script>
+
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
 
 {{--    <link rel="stylesheet" href="{{asset('_css/bootstrap.min.css')}}">--}}
@@ -69,286 +75,722 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <!-- Start Header Top Area -->
-<div class="header-top-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="logo-area">
-                    <a href="#"><img src="img/logo/logo.png" alt="" /></a>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <div class="header-top-menu">
-                    <ul class="nav navbar-nav notika-top-nav">
-                        <li class="nav-item dropdown">
-                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
-                            <div role="menu" class="dropdown-menu search-dd animated flipInX">
-                                <div class="search-input">
-                                    <i class="notika-icon notika-left-arrow"></i>
-                                    <input type="text" />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-mail"></i></span></a>
-                            <div role="menu" class="dropdown-menu message-dd animated zoomIn">
-                                <div class="hd-mg-tt">
-                                    <h2>Messages</h2>
-                                </div>
-                                <div class="hd-message-info">
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Jonathan Morris</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/4.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Fredric Mitchell</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Glenn Jecobs</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="hd-mg-va">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-alarm"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>3</span></div></a>
-                            <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
-                                <div class="hd-mg-tt">
-                                    <h2>Notification</h2>
-                                </div>
-                                <div class="hd-message-info">
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Jonathan Morris</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/4.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Fredric Mitchell</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Glenn Jecobs</h3>
-                                                <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="hd-mg-va">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-menus"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>2</span></div></a>
-                            <div role="menu" class="dropdown-menu message-dd task-dd animated zoomIn">
-                                <div class="hd-mg-tt">
-                                    <h2>Tasks</h2>
-                                </div>
-                                <div class="hd-message-info hd-task-info">
-                                    <div class="skill">
-                                        <div class="progress">
-                                            <div class="lead-content">
-                                                <p>HTML5 Validation Report</p>
-                                            </div>
-                                            <div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>95%</span>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="lead-content">
-                                                <p>Google Chrome Extension</p>
-                                            </div>
-                                            <div class="progress-bar wow fadeInLeft" data-progress="85%" style="width: 85%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>85%</span> </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="lead-content">
-                                                <p>Social Internet Projects</p>
-                                            </div>
-                                            <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>75%</span> </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="lead-content">
-                                                <p>Bootstrap Admin</p>
-                                            </div>
-                                            <div class="progress-bar wow fadeInLeft" data-progress="93%" style="width: 65%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>65%</span> </div>
-                                        </div>
-                                        <div class="progress progress-bt">
-                                            <div class="lead-content">
-                                                <p>Youtube App</p>
-                                            </div>
-                                            <div class="progress-bar wow fadeInLeft" data-progress="55%" style="width: 55%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>55%</span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hd-mg-va">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-chat"></i></span></a>
-                            <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
-                                <div class="hd-mg-tt">
-                                    <h2>Chat</h2>
-                                </div>
-                                <div class="search-people">
-                                    <i class="notika-icon notika-left-arrow"></i>
-                                    <input type="text" placeholder="Search People" />
-                                </div>
-                                <div class="hd-message-info">
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                                <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Available</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Jonathan Morris</h3>
-                                                <p>Last seen 3 hours ago</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <img src="img/post/4.jpg" alt="" />
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Fredric Mitchell</h3>
-                                                <p>Last seen 2 minutes ago</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <img src="img/post/1.jpg" alt="" />
-                                                <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>David Belle</h3>
-                                                <p>Available</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="hd-message-sn">
-                                            <div class="hd-message-img chat-img">
-                                                <img src="img/post/2.jpg" alt="" />
-                                                <div class="chat-avaible"><i class="notika-icon notika-dot"></i></div>
-                                            </div>
-                                            <div class="hd-mg-ctn">
-                                                <h3>Glenn Jecobs</h3>
-                                                <p>Available</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="hd-mg-va">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </li>
+<style>
+    header.header {
+        background-color: #e7f2f !important;
+        background: #A5C6E5;
+    }
+    #register{
+        z-index: 1;
+        min-width: 152px;
+        height: 46px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0px 7px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #1583e9;
+        border: none;
+        border-radius: 50px;
+        background-color: #ffffff;
+        -webkit-transition-duration: 500ms;
+        -o-transition-duration: 500ms;
+        transition-duration: 500ms;
+        -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+        box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+    }
+/*    Detalhes*/
+    .product-details {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .product__details__pic {
+        overflow: hidden;
+    }
+
+    .product__details__pic__left {
+        width: 22%;
+        max-height: 574px;
+        float: left;
+        overflow-y: auto;
+    }
+
+    .product__details__pic__left .pt {
+        display: block;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .product__details__pic__left .pt::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #000;
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .product__details__pic__left .pt.active::after {
+        opacity: 0.3;
+    }
+
+    .product__details__pic__left .pt:last-child {
+        margin-bottom: 0;
+    }
+
+    .product__details__pic__left .pt img {
+        min-width: 100%;
+    }
+
+    .product__details__slider__content {
+        width: calc(78% - 20px);
+        float: left;
+        margin-left: 20px;
+    }
+
+    .product__details__pic__slider.owl-carousel .owl-nav button {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        font-size: 22px;
+        color: #111111;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        line-height: 44px;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .product__details__pic__slider.owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: 10px;
+    }
+
+    .product__details__text h3 {
+        color: #111111;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .product__details__text h3 span {
+        display: block;
+        font-size: 14px;
+        color: #444444;
+        text-transform: none;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+    .product__details__text .rating {
+        margin-bottom: 16px;
+    }
+
+    .product__details__text .rating i {
+        font-size: 12px;
+        color: #e3c01c;
+        margin-right: -4px;
+    }
+
+    .product__details__text .rating span {
+        font-size: 12px;
+        color: #666666;
+        margin-left: 5px;
+    }
+
+    .product__details__text p {
+        color: #444444;
+        margin-bottom: 28px;
+    }
+
+    .product__details__price {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ca1515;
+        margin-bottom: 30px;
+    }
+
+    .product__details__price span {
+        font-size: 18px;
+        color: #b1b0b0;
+        text-decoration: line-through;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .quantity {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .quantity>span {
+        font-size: 14px;
+        color: #111111;
+        font-weight: 600;
+        float: left;
+        margin-top: 14px;
+        margin-right: 15px;
+    }
+
+    .pro-qty {
+        height: 50px;
+        width: 150px;
+        border: 1px solid #ebebeb;
+        border-radius: 50px;
+        padding: 0 20px;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .pro-qty .qtybtn {
+        font-size: 14px;
+        color: #666666;
+        cursor: pointer;
+        float: left;
+        width: 12px;
+        line-height: 46px;
+    }
+
+    .pro-qty input {
+        font-size: 14px;
+        color: #666666;
+        font-weight: 500;
+        border: none;
+        float: left;
+        width: 84px;
+        text-align: center;
+        height: 48px;
+    }
+
+    .product__details__button {
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    .product__details__button .cart-btn {
+        display: inline-block;
+        font-size: 14px;
+        color: #ffffff;
+        background: #ca1515;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 14px 30px 15px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product__details__button ul {
+        float: left;
+    }
+
+    .product__details__button ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .product__details__button ul li:last-child {
+        margin-right: 0;
+    }
+
+    .product__details__button ul li a {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 1px solid #ebebeb;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 1px;
+    }
+
+    .product__details__button ul li a span {
+        font-size: 18px;
+        color: #666666;
+    }
+
+    .product__details__widget {
+        border-top: 1px solid #ebebeb;
+        padding-top: 35px;
+    }
+
+    .product__details__widget ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    .product__details__widget ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .product__details__widget ul li span {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #111111;
+        width: 150px;
+        float: left;
+    }
+
+    .product__details__widget ul li .stock__checkbox {
+        overflow: hidden;
+    }
+
+    .product__details__widget ul li .stock__checkbox label {
+        display: block;
+        padding-left: 20px;
+        font-size: 14px;
+        color: #666666;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .product__details__widget ul li .stock__checkbox label input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .product__details__widget ul li .stock__checkbox label input:checked~.checkmark {
+        border-color: #ca1515;
+    }
+
+    .product__details__widget ul li .stock__checkbox label input:checked~.checkmark:after {
+        border-color: #ca1515;
+        opacity: 1;
+    }
+
+    .product__details__widget ul li .stock__checkbox label .checkmark {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #444444;
+        border-radius: 2px;
+    }
+
+    .product__details__widget ul li .stock__checkbox label .checkmark:after {
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        width: 11px;
+        height: 5px;
+        border: solid #ffffff;
+        border-width: 1.5px 1.5px 0px 0px;
+        -webkit-transform: rotate(127deg);
+        -ms-transform: rotate(127deg);
+        transform: rotate(127deg);
+        opacity: 0;
+        content: "";
+    }
+
+    .product__details__widget ul li .color__checkbox label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .product__details__widget ul li .color__checkbox label.active input~.checkmark:after {
+        border-color: #ffffff;
+        opacity: 1;
+    }
+
+    .product__details__widget ul li .color__checkbox label:last-child {
+        margin-right: 0;
+    }
+
+    .product__details__widget ul li .color__checkbox label input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .product__details__widget ul li .color__checkbox label input:checked~.checkmark:after {
+        border-color: #ffffff;
+        opacity: 1;
+    }
+
+    .product__details__widget ul li .color__checkbox label .checkmark {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        height: 20px;
+        width: 20px;
+        background: #e31e2f;
+        border-radius: 50%;
+        content: "";
+    }
+
+    .product__details__widget ul li .color__checkbox label .checkmark.black-bg {
+        background: #111111;
+    }
+
+    .product__details__widget ul li .color__checkbox label .checkmark.grey-bg {
+        background: #e4aa8b;
+    }
+
+    .product__details__widget ul li .color__checkbox label .checkmark:after {
+        position: absolute;
+        left: 3px;
+        top: 5px;
+        width: 13px;
+        height: 6px;
+        border: solid #ffffff;
+        border-width: 1.5px 1.5px 0px 0px;
+        -webkit-transform: rotate(127deg);
+        -ms-transform: rotate(127deg);
+        transform: rotate(127deg);
+        opacity: 0;
+        content: "";
+    }
+
+    .product__details__widget ul li .size__btn label {
+        font-size: 14px;
+        color: #666666;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 10px;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .product__details__widget ul li .size__btn label:last-child {
+        margin-right: 0;
+    }
+
+    .product__details__widget ul li .size__btn label.active {
+        color: #ca1515;
+    }
+
+    .product__details__widget ul li .size__btn label input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .product__details__widget ul li p {
+        margin-bottom: 0;
+        color: #666666;
+    }
+
+    .product__details__tab {
+        padding-top: 80px;
+        margin-bottom: 65px;
+    }
+
+    /*.nav {*/
+    /*    border-bottom: none;*/
+    /*    -webkit-box-pack: center;*/
+    /*    -ms-flex-pack: center;*/
+    /*    justify-content: center;*/
+    /*    position: relative;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+
+    /*.nav::before {*/
+    /*    position: absolute;*/
+    /*    left: 0;*/
+    /*    top: 13px;*/
+    /*    height: 1px;*/
+    /*    width: 335px;*/
+    /*    background: #e1e1e1;*/
+    /*    content: "";*/
+    /*}*/
+
+    /*.nav::after {*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*    top: 13px;*/
+    /*    height: 1px;*/
+    /*    width: 335px;*/
+    /*    background: #e1e1e1;*/
+    /*    content: "";*/
+    /*}*/
+
+    /*.nav-item {*/
+    /*    margin-right: 46px;*/
+    /*}*/
+
+    /*.nav-item:last-child {*/
+    /*    margin-right: 0;*/
+    /*}*/
+
+    /*.nav-item .nav-link {*/
+    /*    font-size: 18px;*/
+    /*    color: #666666;*/
+    /*    font-weight: 600;*/
+    /*    border: none;*/
+    /*    border-top-left-radius: 0;*/
+    /*    border-top-right-radius: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+
+    /*.nav-item .nav-link.active {*/
+    /*    color: #111111;*/
+    /*}*/
+
+    /*.tab-content .tab-pane h6 {*/
+    /*    color: #666666;*/
+    /*    font-weight: 600;*/
+    /*    margin-bottom: 24px;*/
+    /*}*/
+
+    /*.tab-content .tab-pane p:last-child {*/
+    /*    margin-bottom: 0;*/
+    /*}*/
+
+    .related__title h5 {
+        font-size: 20px;
+        color: #111111;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+/*comentarios*/
+    .chat
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .chat li
+    {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #B3A9A9;
+    }
+
+    .chat li.left .chat-body
+    {
+        margin-left: 60px;
+    }
+
+    .chat li.right .chat-body
+    {
+        margin-right: 60px;
+    }
+
+
+    .chat li .chat-body p
+    {
+        margin: 0;
+        color: #777777;
+    }
+
+    .panel .slidedown .glyphicon, .chat .glyphicon
+    {
+        margin-right: 5px;
+    }
+
+    .panel-body
+    {
+        overflow-y: scroll;
+        height: 250px;
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+    }
+/*profile*/
+    .emp-profile{
+        padding: 3%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+    .profile-img{
+        text-align: center;
+    }
+    .profile-img img{
+        width: 70%;
+        height: 100%;
+    }
+    .profile-img .file {
+        position: relative;
+        overflow: hidden;
+        margin-top: -20%;
+        width: 70%;
+        border: none;
+        border-radius: 0;
+        font-size: 15px;
+        background: #212529b8;
+    }
+    .profile-img .file input {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        top: 0;
+    }
+    .profile-head h5{
+        color: #333;
+    }
+    .profile-head h6{
+        color: #0062cc;
+    }
+    .profile-edit-btn{
+        border: none;
+        border-radius: 1.5rem;
+        width: 70%;
+        padding: 2%;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+    }
+    .proile-rating{
+        font-size: 12px;
+        color: #818182;
+        margin-top: 5%;
+    }
+    .proile-rating span{
+        color: #495057;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .profile-head .nav-tabs{
+        margin-bottom:5%;
+    }
+    .profile-head .nav-tabs .nav-link{
+        font-weight:600;
+        border: none;
+    }
+    .profile-head .nav-tabs .nav-link.active{
+        border: none;
+        border-bottom:2px solid #0062cc;
+    }
+    .profile-work{
+        padding: 14%;
+        margin-top: -15%;
+    }
+    .profile-work p{
+        font-size: 12px;
+        color: #818182;
+        font-weight: 600;
+        margin-top: 10%;
+    }
+    .profile-work a{
+        text-decoration: none;
+        color: #495057;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .profile-work ul{
+        list-style: none;
+    }
+    .profile-tab label{
+        font-weight: 600;
+    }
+    .profile-tab p{
+        font-weight: 600;
+        color: #0062cc;
+    }
+</style>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Start Header Top Area -->
+<!-- Header Section Begin -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <ul class="header__top__left">
+                        <li><span class="icon_mobile"></span> (+123) 4567-7890-123</li>
+                        <li><span class="icon_clock_alt"></span> Mon-Sat: 10:00 - 16:00 / Sunday Close</li>
                     </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="header__top__right">
+                        <a href="#" class="map-btn">Find us on map <span class="arrow_right"></span></a>
+                        <div class="header__right__social">
+                            <a href="#"><span class="social_facebook"></span></a>
+                            <a href="#"><span class="social_twitter"></span></a>
+                            <a href="#"><span class="social_vimeo"></span></a>
+                            <a href="#"><span class="social_pinterest"></span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                {{--        <ul class="header__right">--}}
+                {{--            <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>--}}
+                {{--            <li><a href="#"><span class="icon_user"></span></a></li>--}}
+                {{--        </ul>--}}
+            </div>
+            <div class="col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li><a href="#">Atualizações</a>
+                            <ul class="dropdown">
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="./services-details.html">Services Details</a></li>
+                                <li><a href="./shop-details.html">Shop Details</a></li>
+                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        {{--                <li><a href="./services.html">Sobre Nos</a></li>--}}
+                        <li><a id="register" href="./shop.html">Publicar Projecto</a></li>
+                        <li><a href="#"><b><i class="fa fa-user"></i></b></a>
+                            <ul class="dropdown">
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="./services-details.html">Services Details</a></li>
+                                <li><a href="./shop-details.html">Shop Details</a></li>
+                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
 <!-- End Header Top Area -->
 <!-- Mobile Menu start -->
 <div class="mobile-menu-area">
@@ -359,14 +801,14 @@
                     <nav id="dropdown">
                         <ul class="mobile-menu-nav">
                             <li><a data-toggle="collapse" data-target="#Charts" href="#">Painel</a>
-{{--                                <ul class="collapse dropdown-header-top">--}}
-{{--                                    <li><a href="index.html">Dashboard One</a></li>--}}
-{{--                                    <li><a href="index-2.html">Dashboard Two</a></li>--}}
-{{--                                    <li><a href="index-3.html">Dashboard Three</a></li>--}}
-{{--                                    <li><a href="index-4.html">Dashboard Four</a></li>--}}
-{{--                                    <li><a href="analytics.html">Analytics</a></li>--}}
-{{--                                    <li><a href="widgets.html">Widgets</a></li>--}}
-{{--                                </ul>--}}
+                                {{--                                <ul class="collapse dropdown-header-top">--}}
+                                {{--                                    <li><a href="index.html">Dashboard One</a></li>--}}
+                                {{--                                    <li><a href="index-2.html">Dashboard Two</a></li>--}}
+                                {{--                                    <li><a href="index-3.html">Dashboard Three</a></li>--}}
+                                {{--                                    <li><a href="index-4.html">Dashboard Four</a></li>--}}
+                                {{--                                    <li><a href="analytics.html">Analytics</a></li>--}}
+                                {{--                                    <li><a href="widgets.html">Widgets</a></li>--}}
+                                {{--                                </ul>--}}
                             </li>
                             <li><a data-toggle="collapse" data-target="#demoevent" href="#">Email</a>
                                 <ul id="demoevent" class="collapse dropdown-header-top">
@@ -455,19 +897,19 @@
 </div>
 <!-- Mobile Menu end -->
 <!-- Main Menu area start-->
-<div class="main-menu-area mg-tb-40">
+<div class="main-menu-area pt-3" style="background-color: #1568AD">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                    <li class=""><a href="/dashboard"><i class="notika-icon notika-house"></i> Painel</a>
+                    <li class=""><a href="/dashboard"><i class="fa fa-home"></i> Painel</a>
                     </li>
-                    <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Meus Projectos</a>
+                    <li><a data-toggle="tab" href="#mailbox"><i class="fa fa-briefcase"></i> Meus Projectos</a>
                     </li>
                     {{--                    Freelacer--}}
-                    <li><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Trabalhos</a>
+                    <li><a data-toggle="tab" href="#Interface"><i class="fa fa-tasks"></i> Trabalhos</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Charts"><i class="notika-icon notika-bar-chart"></i> Freelancer</a>
+                    <li><a data-toggle="tab" href="#Charts"><i class="fa fa-shield"></i> Freelancer</a>
 {{--                    </li>--}}
 {{--                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Tables</a>--}}
 {{--                    </li>--}}

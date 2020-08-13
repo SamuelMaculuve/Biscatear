@@ -28,6 +28,13 @@ class ProjectController extends Controller
     public function freelancer(){
         return view('project.freelancer');
     }
+    public function projectDetail(){
+        return view('project.projectDetail');
+    }
+    public function freelanderDetail(){
+        return view('project.freelanderDetail');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

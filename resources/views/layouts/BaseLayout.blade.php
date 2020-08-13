@@ -22,6 +22,31 @@
      body{
          background-color: #F6F8FA;
      }
+     #register{
+         z-index: 1;
+         min-width: 160px;
+         height: 50px;
+         line-height: 50px;
+         font-size: 16px;
+         font-weight: 600;
+         display: inline-block;
+         padding: 0 30px;
+         text-align: center;
+         text-transform: capitalize;
+         color: #1583e9;
+         border: none;
+         border-radius: 50px;
+         background-color: #ffffff;
+         -webkit-transition-duration: 500ms;
+         -o-transition-duration: 500ms;
+         transition-duration: 500ms;
+         -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+         box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+     }
+     header.header {
+         background-color: #e7f2f !important;
+         background: #A5C6E5;
+     }
 
  </style>
 </head>
@@ -100,8 +125,8 @@
         <nav class="header__menu">
             <ul>
                 <li><a href="./index.html">Biscatear Pro</a></li>
-{{--                <li><a href="./services.html">Tornar-se Biscateador</a></li>--}}
-                <li><a href="./shop.html">Entrar</a></li>
+{{--                <li><a href="./services.html">Sobre Nos</a></li>--}}
+                <li><a id="register" href="./shop.html">Entrar</a></li>
                 <li><a href="./shop.html">Registar-se</a></li>
                 <li><a href="#" class="search-switch"><span class="icon_search"></span></a></li>
             </ul>

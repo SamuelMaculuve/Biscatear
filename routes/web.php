@@ -23,7 +23,8 @@ Route::get('/dashboard', 'projectController@dashbrod')->name('dashboard');
 Route::get('/login', 'projectController@login')->name('login');
 Route::get('/myProject', 'projectController@myProject')->name('myProject');
 Route::get('/freelancer', 'projectController@freelancer')->name('freelancer');
-
+Route::get('/projectDetail', 'projectController@projectDetail')->name('projectDetail');
+Route::get('/freelanderDetail', 'projectController@freelanderDetail')->name('freelanderDetail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

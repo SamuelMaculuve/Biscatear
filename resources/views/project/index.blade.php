@@ -1,4 +1,4 @@
-@extends('layouts.BaseLayout')
+@extends('layouts.BaseLayoutDashboard')
 
 @section('content')
 <!-- Header Section End -->
@@ -46,6 +46,22 @@
                         <div class="input__item">
                             <p>Como você quer pagar?<p/>
                             <input type="text">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="nk-int-mk sl-dp-mn sm-res-mg-t-10">
+                                <h2>Multiple Example</h2>
+                            </div>
+                            <div class="chosen-select-act fm-cmp-mg">
+                                <select class="chosen" multiple data-placeholder="Choose a Country...">
+                                    <option value="United States">United States</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Aland Islands">Aland Islands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="input__item">
                             <p>Qual é seu orçamento estimado?<p/>

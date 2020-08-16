@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/daterangepicker.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
  <style>
      body{

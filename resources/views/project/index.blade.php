@@ -38,6 +38,24 @@
                             <span>Start with a bit about yourself or your business, and include an overview of what you need done</span>
                             <textarea></textarea>
                         </div>
+
+                        <div class="well" style="overflow: auto">
+                            <div class="col-md-4">
+                                Date Range Picker
+                                <form class="">
+                                    <fieldset>
+                                        <div class="control-group ">
+                                            <div class="controls">
+                                                <div class="input-prepend input-group">
+                                                    <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                                                    <input type="text" style="width: 200px" name="reservation" id="reservation" class="form-control" value="01/01/2016 - 01/25/2016" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
                         <div class="input__item">
                             <p>Quais as habilidades necessárias?</p>
                             <span>Start with a bit about yourself or your business, and include an overview of what you need done</span>
